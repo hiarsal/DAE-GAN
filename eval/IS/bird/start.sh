@@ -1,0 +1,1 @@
+python /apdcephfs/private_arsalruan/ft_local/DA-GAN-python3/eval/IS/bird/inception_score_bird.py --image_folder /apdcephfs/share_1290939/arsalruan/output/birds_DAGAN_2021_02_22_15_04_51/Model/netG_epoch_600
