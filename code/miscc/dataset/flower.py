@@ -12,7 +12,7 @@ cfg = __C
 # Dataset name: flowers, birds
 __C.DATASET_NAME = 'flowers'
 __C.CONFIG_NAME = 'DAMSM'
-__C.DATA_DIR = '/apdcephfs/private_arsalruan/ft_local/DA-GAN-python3/data/flowers'
+__C.DATA_DIR = 'Your_path/DAE-GAN/data/flowers'
 __C.GPU_ID = 0
 __C.CUDA = True
 __C.WORKERS = 1
