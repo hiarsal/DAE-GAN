@@ -11,8 +11,8 @@ cfg = __C
 
 # Dataset name: flowers, birds
 __C.DATASET_NAME = 'coco'
-__C.CONFIG_NAME = 'DAGAN'
-__C.DATA_DIR = '/data/rsl/DA-GAN-python3/data/coco'
+__C.CONFIG_NAME = 'DAE-GAN'
+__C.DATA_DIR = 'Your_path/DAE-GAN/data/coco'
 __C.GPU_ID = 1
 __C.CUDA = True
 __C.WORKERS = 1
@@ -37,8 +37,8 @@ __C.TRAIN.GENERATOR_LR = 2e-4
 __C.TRAIN.ENCODER_LR = 2e-4
 __C.TRAIN.RNN_GRAD_CLIP = 0.25
 __C.TRAIN.FLAG = False
-__C.TRAIN.NET_E = '/data/rsl/DA-GAN-python3/DAMSMencoders/coco/text_encoder100.pth'
-__C.TRAIN.NET_G = '/data/rsl/DA-GAN-python3/output/coco_DAGAN_2021_02_09_00_42_09/Model/netG_epoch_120.pth'
+__C.TRAIN.NET_E = 'Your_path/DAE-GAN/DAMSMencoders/coco/text_encoder100.pth'
+__C.TRAIN.NET_G = 'Your_path/DAE-GAN/output/coco_DAGAN_2021_02_09_00_42_09/Model/netG_epoch_120.pth'
 __C.TRAIN.B_NET_D = False
 
 __C.TRAIN.SMOOTH = edict()
