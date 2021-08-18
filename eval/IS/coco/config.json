@@ -1,8 +1,0 @@
-{
-    "token":"bwzEfo15rW4UrflyjAy8mg",
-    "business_flag": "TEG_AILab_CVC_chongqing",
-    "model_local_file_path": "/apdcephfs/private_arsalruan/ft_local/DA-GAN-python3/eval/IS/coco",
-    "host_num": 1,
-    "host_gpu_num": 1,
-    "image_full_name": "mirrors.tencent.com/arsalruan/python2.7-tf1.15"
-}
