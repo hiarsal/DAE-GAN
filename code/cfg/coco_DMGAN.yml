@@ -1,7 +1,7 @@
-CONFIG_NAME: 'DAGAN'
+CONFIG_NAME: 'DAE-GAN'
 
 DATASET_NAME: 'coco'
-DATA_DIR: '/apdcephfs/private_arsalruan/ft_local/DA-GAN-python3/data/coco'
+DATA_DIR: 'Your_path/DAE-GAN/data/coco'
 GPU_ID: 8
 WORKERS: 1
 
@@ -12,7 +12,7 @@ TREE:
 
 TRAIN:
     FLAG: True
-    NET_G: ''  # '../models/coco_AttnGAN2.pth'
+    NET_G: '' 
     B_NET_D: True
     BATCH_SIZE: 32  # 32
     MAX_EPOCH: 120
@@ -20,7 +20,7 @@ TRAIN:
     DISCRIMINATOR_LR: 0.0002
     GENERATOR_LR: 0.0002
     #
-    NET_E: '/apdcephfs/private_arsalruan/ft_local/DA-GAN-python3/DAMSMencoders/coco/text_encoder100.pth'
+    NET_E: 'Your_path/DAE-GAN/DAMSMencoders/coco/text_encoder100.pth'
     SMOOTH:
         GAMMA1: 4.0  # 1,2,5 good 4 best  10&100bad
         GAMMA2: 5.0
