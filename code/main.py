@@ -32,7 +32,7 @@ sys.path.append(dir_path)
 
 now = datetime.datetime.now(dateutil.tz.tzlocal())
 timestamp = now.strftime('%Y_%m_%d_%H_%M_%S')
-output_dir = '/apdcephfs/share_1290939/arsalruan/output/%s_%s_%s' % \
+output_dir = '/output/%s_%s_%s' % \
         (cfg.DATASET_NAME, cfg.CONFIG_NAME, timestamp)
 
 
@@ -55,8 +55,6 @@ def parse_args():
 
 def train(gpu, args):
     start_t = time.time()
-    if gpu == 0:
-        print("wokule")
     rank = args.nr * args.gpu_id + gpu
     dist.init_process_group(backend='nccl', init_method='env://', world_size=args.world_size, rank=rank)
 
@@ -126,15 +124,14 @@ def train(gpu, args):
             ######################################################
             data = data_iter.next()
             imgs, captions, cap_lens, class_ids, keys, attrs = prepare_data(data)
-            # attrs:[batch, attr_num, 5] captions:[batch, seq_len]
+            
             hidden = text_encoder.init_hidden(batch_size)
             # words_embs: batch_size x nef x seq_len
             # sent_emb: batch_size x nef
             words_embs, sent_emb = text_encoder(captions, cap_lens, hidden)
             words_embs, sent_emb = words_embs.detach(), sent_emb.detach()
             # attrs processing
-            # attrs = np.array(attrs)
-            # print(type(cap_lens), "======", cap_lens)
+            
             attr_len = torch.Tensor([cfg.MAX_ATTR_LEN] * cap_lens.size(0))
             _, attr_emb0 = text_encoder(attrs[:, 0:1, :].squeeze(), attr_len, hidden)
             _, attr_emb1 = text_encoder(attrs[:, 1:2, :].squeeze(), attr_len, hidden)
@@ -343,9 +340,6 @@ def sampling(gpu, args):
                 words_embs, sent_emb = words_embs.detach(), sent_emb.detach()
 
                 # attrs processing
-                # attrs = np.array(attrs)
-                #  _, attr_emb0 = text_encoder(attrs[:, 0:1, :].squeeze(), 5, hidden)
-                # _, attr_emb1 = text_encoder(attrs[:, 1:2, :].squeeze(), 5, hidden)
                 attr_len = torch.Tensor([cfg.MAX_ATTR_LEN] * cap_lens.size(0))
                 _, attr_emb0 = text_encoder(attrs[:, 0:1, :].squeeze(), attr_len, hidden)
                 _, attr_emb1 = text_encoder(attrs[:, 1:2, :].squeeze(), attr_len, hidden)
@@ -444,9 +438,8 @@ def main():
     print("Seed: %d" % (args.manualSeed))
 
    # if cfg.TRAIN.FLAG:
-    print("qiuqiule!")
-#    mp.spawn(train, nprocs=args.gpu_id, args=(args,))
-#    train(0, args)
+   #    mp.spawn(train, nprocs=args.gpu_id, args=(args,))
+   #    train(0, args)
    # else:
     sampling(0, args)
 
