@@ -60,7 +60,7 @@ class InceptionV3(nn.Module):
         inception = models.inception_v3()
 
         url = 'https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth'
-        inception.load_state_dict(model_zoo.load_url(url, "/data/rsl/DA-GAN-python3/data/"))
+        inception.load_state_dict(model_zoo.load_url(url, "Your_path/DAE-GAN/data/"))
         print('Load pretrained model from ', url)
 
         # Block 0: input to maxpool1
