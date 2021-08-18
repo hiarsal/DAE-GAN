@@ -23,7 +23,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
-1. Download our preprocessed metadata for [birds](https://drive.google.com/open?id=1O_LtUP9sch09QH3s_EBAgLEctBQ5JBSJ) [coco](https://drive.google.com/open?id=1rSnbIGNDGZeHlsUlLdahj0RJ9oo6lgH9) and save them to `data/`
+1. Download our preprocessed metadata for [birds](https://github.com/hiarsal/DAE-GAN) [coco](https://github.com/hiarsal/DAE-GAN) and save them to `data/`
 2. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
 3. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
 
@@ -45,8 +45,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 **Pretrained Model**
 - [DAMSM for bird](https://drive.google.com/open?id=1GNUKjVeyWYBJ8hEU-yrfYQpDOkxEyP3V). Download and save it to `DAMSMencoders/`
 - [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ). Download and save it to `DAMSMencoders/`
-- [DAE-GAN for bird](https://drive.google.com/open?id=1lqNG75suOuR_8gjoEPYNp8VyT_ufPPig). Download and save it to `models/`
-- [DAE-GAN for coco](https://drive.google.com/open?id=1i9Xkg9nU74RAvkcqKE-rJYhjvzKAMnCi). Download and save it to `models/`
+- [DAE-GAN for bird](https://github.com/hiarsal/DAE-GAN). Download and save it to `models/`
+- [DAE-GAN for coco](https://github.com/hiarsal/DAE-GAN). Download and save it to `models/`
 
 
 **Validation**
