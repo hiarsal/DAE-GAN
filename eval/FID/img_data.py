@@ -36,7 +36,7 @@ class Dataset(data.Dataset):
 
 
 if __name__ == '__main__':
-    path = "/apdcephfs/share_1290939/arsalruan/output/coco_DAGAN_2021_03_09_22_16_07/Model/netG_epoch_120"
+    path = "Your_path/output/coco_DAGAN_2021_03_09_22_16_07/Model/netG_epoch_120"
     batch_size = 16
     dataset = Dataset(path, transforms.Compose([
         transforms.Resize(299),
