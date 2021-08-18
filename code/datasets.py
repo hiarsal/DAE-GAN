@@ -24,7 +24,7 @@ if sys.version_info[0] == 2:
 else:
     import pickle
 
-nltk.data.path.append("/apdcephfs/private_arsalruan/ft_local/nltk_data")
+nltk.data.path.append("Your nltk package path")
 
 def prepare_data(data):
     imgs, captions, captions_lens, class_ids, keys, attrs = data
@@ -160,7 +160,6 @@ class TextDataset(data.Dataset):
                 for cap in captions:
                 #    print(cnt, "cap:", cap)
                     if len(cap) == 0:
-                #        print("Here is the problem!", cnt, "cap:", cap)
                         continue
                     cap = cap.replace("\ufffd\ufffd", " ")
                     # picks out sequences of alphanumeric characters as tokens
@@ -171,8 +170,9 @@ class TextDataset(data.Dataset):
 
                     # Attribute extraction
                     sentence_tag = nltk.pos_tag(tokens)
+                    # CUB
                     grammar = "NP: {<DT>*<JJ>*<CC|IN>*<JJ>+<NN|NNS>+|<DT>*<NN|NNS>+<VBZ>+<JJ>+<IN|CC>*<JJ>*}"
-                  #  grammar = "NP: {<DT>*<JJ>*<CC|IN>*<JJ>*<NN|NNS>+|<DT>*<NN|NNS>+<VBZ>*<JJ>*<IN|CC>*<JJ>*}"
+                    # COCO
                   #  grammar = "NP: {<CD|DT|JJ>*<JJ|PRP$>*<NN|NNS>+|<CD|DT|JJ>*<JJ|PRP$>*<NN|NNS>+<IN>+<NN|NNS>+|<VB|VBD|VBG|VBN|VBP|VBZ>+<CD|DT>*<JJ|PRP$>*<NN|NNS>+|<IN>+<DT|CD|JJ|PRP$>*<NN|NNS>+<IN>*<CD|DT>*<JJ|PRP$>*<NN|NNS>*}"
                     cp = nltk.RegexpParser(grammar)
                     tree = cp.parse(sentence_tag)
@@ -274,7 +274,7 @@ class TextDataset(data.Dataset):
                 ixtoword, wordtoix, len(ixtoword)]
 
     def load_text_data(self, data_dir, split):
-        # /apdcephfs/private_arsalruan/ft_local/DM-GAN-master/data/birds/captions.pickle
+        
         filepath = os.path.join(data_dir, 'captions.pickle')
         print("filepath:", filepath)
         train_names = self.load_filenames(data_dir, 'train')
@@ -329,8 +329,6 @@ class TextDataset(data.Dataset):
 
     def get_caption(self, sent_ix):
         # a list of indices for a sentence
-      #  print("Error testing!", sent_ix, len(self.captions))
-      #  print("========================================")
         sent_caption = np.asarray(self.captions[sent_ix]).astype('int64')
         if (sent_caption == 0).sum() > 0:
             print('ERROR: do not need END (0) token', sent_caption)
@@ -378,7 +376,6 @@ class TextDataset(data.Dataset):
                 ix = np.sort(ix)
                 sen_attr_new[attr_cnt-1][:, 0] = attr[ix]
 
-        # [max_attr_num, max_attr_len] [2, 5]
         return sen_attr_new
 
     def __getitem__(self, index):
