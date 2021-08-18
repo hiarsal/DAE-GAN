@@ -16,7 +16,7 @@ import math
 import sys
 # import imageio
 
-MODEL_DIR = '/data/rsl/DA-GAN-python3/data'
+MODEL_DIR = 'Your_path/data'
 DATA_URL = 'http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz'
 softmax = None
 
