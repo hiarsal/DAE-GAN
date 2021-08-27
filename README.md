@@ -23,9 +23,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
-1. Download our preprocessed metadata for [birds](https://github.com/hiarsal/DAE-GAN) [coco](https://github.com/hiarsal/DAE-GAN) and save them to `data/`
-2. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
-3. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
+1. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
+2. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
 
 
 
