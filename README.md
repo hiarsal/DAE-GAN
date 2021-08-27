@@ -44,7 +44,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 **Pretrained Model**
 - [DAMSM for bird](https://drive.google.com/open?id=1GNUKjVeyWYBJ8hEU-yrfYQpDOkxEyP3V). Download and save it to `DAMSMencoders/`
 - [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ). Download and save it to `DAMSMencoders/`
-- [DAE-GAN for bird](https://github.com/hiarsal/DAE-GAN). Download and save it to `models/`
+- [DAE-GAN for bird](https://pan.baidu.com/s/1kkh3V0az_H44fiUaPbt9gw). Download and save it to `models/`. Passwd: 8ncq
 - [DAE-GAN for coco](https://github.com/hiarsal/DAE-GAN). Download and save it to `models/`
 
 
