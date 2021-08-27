@@ -34,8 +34,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
   - For coco dataset: `python pretrain_DAMSM.py --cfg cfg/DAMSM/coco.yml --gpu 0`
  
 - Train DAE-GAN models:
-  - For bird dataset: `python main.py --cfg cfg/bird_attn2.yml --gpu 0`
-  - For coco dataset: `python main.py --cfg cfg/coco_attn2.yml --gpu 0`
+  - For bird dataset: `python main.py --cfg cfg/bird_DAEGAN.yml --gpu 0`
+  - For coco dataset: `python main.py --cfg cfg/coco_DAEGAN.yml --gpu 0`
 
 - `*.yml` files are example configuration files for training/evaluation our models.
 
@@ -60,6 +60,18 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 :-------------------------:|:-------------------------:
 ![] -->
 <img src="comparison.png" width="800px" height="300px"/>
+
+### Citing DAE-GAN
+If you find DAE-GAN useful in your research, please consider citing:
+<!-- 
+```
+@article{Tao18attngan,
+  author    = {Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He},
+  title     = {AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks},
+  Year = {2018},
+  booktitle = {{CVPR}}
+}
+``` -->
 
 **Reference**
 
