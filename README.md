@@ -62,6 +62,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 <img src="comparison.png" width="800px" height="300px"/>
 
 **Citing DAE-GAN**
+
 If you find DAE-GAN useful in your research, please consider citing:
 <!-- 
 ```
