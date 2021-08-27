@@ -1,0 +1,30 @@
+CONFIG_NAME: 'DMGAN'
+
+DATASET_NAME: 'coco'
+DATA_DIR: '/data/rsl/DA-GAN-python3/data/coco'
+GPU_ID: 1
+WORKERS: 1
+
+B_VALIDATION: True
+TREE:
+    BRANCH_NUM: 4
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '/data/rsl/DA-GAN-python3/output/coco_DAGAN_2021_02_09_00_42_09/Model/netG_epoch_120.pth'
+    B_NET_D: False
+    BATCH_SIZE: 10
+    NET_E: '/data/rsl/DA-GAN-python3/DAMSMencoders/coco/text_encoder100.pth'
+
+
+GAN:
+    DF_DIM: 32
+    GF_DIM: 64
+    Z_DIM: 100
+    R_NUM: 3
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 5
+    WORDS_NUM: 20
