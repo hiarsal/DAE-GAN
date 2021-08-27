@@ -219,7 +219,7 @@ def train(gpu, args):
 #                    im3_ = np.array(Image.fromarray(im3).resize((256, 256)))
 #                    im = np.hstack((im0_, im1_, im2_, im3_))
 #                    im = Image.fromarray(im)
-#                    save_path = "/apdcephfs/share_1290939/arsalruan/bird_0208/"
+#                    save_path = "Yourpath"
 #                    filename = keys[j].replace("/", "_")
 #                    fullpath = '%s%d_%d_%s.png' % (save_path, epoch, step, filename)
 #                    im.save(fullpath)
