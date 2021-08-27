@@ -37,7 +37,7 @@ output_dir = '/output/%s_%s_%s' % \
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Train a AttnGAN network')
+    parser = argparse.ArgumentParser(description='Train a DAE-GAN network')
     parser.add_argument('--cfg', dest='cfg_file',
                         help='optional config file',
                         default='cfg/bird_DAEGAN.yml', type=str)
