@@ -3,7 +3,7 @@
 
 Pytorch implementation for reproducing DAE-GAN results in the paper [DAE-GAN: Dynamic Aspect-aware GAN for Text-to-Image Synthesis] by Shulan Ruan, Yong Zhang, Kun Zhang, Yanbo Fan, Fan Tang, Qi Liu, Enhong Chen. (This work was performed when Ruan was an intern with Tencent AI Lab). 
 
-<img src="framework.png" width="900px" height="350px"/>
+<img src="framework.png" width="800px" height="250px"/>
 
 
 ### Dependencies
