@@ -60,4 +60,4 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 <!--  bird example              |  coco example
 :-------------------------:|:-------------------------:
 ![] -->
-<img src="comparison.png" width="1000px" height="400px"/>
+<img src="comparison.png" width="900px" height="300px"/>
