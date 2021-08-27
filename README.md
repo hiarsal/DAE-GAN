@@ -60,3 +60,10 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 :-------------------------:|:-------------------------:
 ![] -->
 <img src="comparison.png" width="800px" height="300px"/>
+
+**Reference**
+
+- [StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1710.10916) [[code]](https://github.com/hanzhanggit/StackGAN-v2)
+- [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434) [[code]](https://github.com/carpedm20/DCGAN-tensorflow)
+- [AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks](https://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf) [[code]](https://github.com/taoxugit/AttnGAN)
+- [DM-GAN: Dynamic Memory Generative Adversarial Networks for Text-to-Image Synthesis](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_DM-GAN_Dynamic_Memory_Generative_Adversarial_Networks_for_Text-To-Image_Synthesis_CVPR_2019_paper.pdf) [[code]](https://github.com/MinfengZhu/DM-GAN)
