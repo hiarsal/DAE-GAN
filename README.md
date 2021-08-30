@@ -64,6 +64,14 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 **Citing DAE-GAN**
 
 If you find DAE-GAN useful in your research, please consider citing:
+@misc{ruan2021daegan,
+      title={DAE-GAN: Dynamic Aspect-aware GAN for Text-to-Image Synthesis}, 
+      author={Shulan Ruan and Yong Zhang and Kun Zhang and Yanbo Fan and Fan Tang and Qi Liu and Enhong Chen},
+      year={2021},
+      eprint={2108.12141},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 <!-- 
 ```
 @article{Tao18attngan,
