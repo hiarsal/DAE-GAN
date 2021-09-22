@@ -7,7 +7,7 @@ WORKERS: 1
 
 B_VALIDATION: True  # True  # False
 TREE:
-    BRANCH_NUM: 3
+    BRANCH_NUM: 4
 
 
 TRAIN:
