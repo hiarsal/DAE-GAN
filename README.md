@@ -41,7 +41,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 **Pretrained Model**
 - [DAMSM for bird](https://drive.google.com/open?id=1GNUKjVeyWYBJ8hEU-yrfYQpDOkxEyP3V). Download and save it to `DAMSMencoders/`
 - [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ). Download and save it to `DAMSMencoders/`
-- [DAE-GAN for bird](https://drive.google.com/drive/folders/1FzPOULU1Z5q3EcGm7m9w-Fl21QJmtcnm?usp=sharing). Download and save it to `models/`. netG_3s means generation with 3 Generators(2 aspects) in total. netG_4s means generation with 4 Generators(3 aspects) in total.
+- [DAE-GAN for bird](https://drive.google.com/drive/folders/1FzPOULU1Z5q3EcGm7m9w-Fl21QJmtcnm?usp=sharing). Download and save it to `models/`. netG_3s means generation with 3 Generators (2 aspects) in total. netG_4s means generation with 4 Generators (3 aspects) in total.
 - [DAE-GAN for coco](https://drive.google.com/drive/folders/1i0PM9HTf5g-cK4TXWw34ilYT5PQHOoxf?usp=sharing). Download and save it to `models/`
 
 
