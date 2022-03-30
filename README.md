@@ -23,8 +23,9 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 **Data**
 
-1. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
-2. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
+1. Download our preprocessed metadata for [birds](https://drive.google.com/drive/folders/1XUdg0jvey8oIjTa5m3ALPIiK9y7qqktm?usp=sharing) [coco](https://drive.google.com/drive/folders/1BKXxsdUeQDJJ0qU_463qVvnZLrf65zXP?usp=sharing) and save them to data/
+2. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
+3. Download [coco](http://cocodataset.org/#download) dataset and extract the images to `data/coco/`
 
 
 
